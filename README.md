@@ -14,17 +14,32 @@ npm:
 npm install @zakwanhisham/streak-counter
 ```
 
+[![Edit streak-counter (ts-course)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/streak-counter-ts-course-twsw1?fontsize=14&hidenavigation=1&theme=dark)
+
 ## Usage
 
 ```javascript
-import {streakCounter} from "@zakwanhisham/streak-counter";
+import "./styles.css";
++ import { streakCounter } from "@zakwanhisham/streak-counter";
 
-const today = new Date();
-const streak = streakCounter(localStorage, today);
-// streak returns an object:
-// {
-//    currentCount: 1,
-//    lastLoginDate: "11/11/2021",
-//    startDate: "11/11/2021",
-// }
-```
+export default function App() {
++ const today = new Date();
++ const { currentCount } = streakCounter(localStorage, today);
+
+ return (
+   <div className="App">
+     <h1 style=>Current streak</h1>
+     <div>
+       <p style=>
+         <span aria-label="fire emoji" role="img">
+           🔥
+         </span>
+       </p>
+     </div>
+     <p style=>
++       {currentCount} day
++       {currentCount > 1 ? "s" : ""}
+     </p>
+   </div>
+ );
+}`
