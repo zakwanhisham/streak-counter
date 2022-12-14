@@ -16,6 +16,8 @@ npm install @zakwanhisham/streak-counter
 
 ## Usage
 
+[![Edit streak-counter (ts-course)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/streak-counter-ts-course-twsw1?fontsize=14&hidenavigation=1&theme=dark)
+
 ```javascript
 import "./styles.css";
 + import { streakCounter } from "@zakwanhisham/streak-counter";
@@ -40,5 +42,6 @@ export default function App() {
      </p>
    </div>
  );
-}```
-[![Edit streak-counter (ts-course)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/streak-counter-ts-course-twsw1?fontsize=14&hidenavigation=1&theme=dark)
+}
+```
+
