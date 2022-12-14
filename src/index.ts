@@ -1,7 +1,7 @@
 import { buildStreak, formattedDate, Streak, KEY, updateStreak } from "./utils"
 
 
-export function differenceInDays(dateLeft: Date, dateRight: Date): number {
+function differenceInDays(dateLeft: Date, dateRight: Date): number {
   const diffTime = Math.abs(dateLeft.getTime() - dateRight.getTime());
   const differenceInDays = Math.abs(diffTime / (1000 * 60 * 60 * 24));
 
